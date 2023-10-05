@@ -92,6 +92,7 @@ sizefunc 决不能和 size 属性一起使用，也不能和 out 属性单独使
 
 `size_t sizefunc_function_name(const parameter_type * p) ;
 `
+
 parameter_type 是使用 sizefunc 标记的参数的数据类型。如果没有提供 sizefunc 的定义，链接器会报错。如代码清单 8-3 所示，sizefunc 还可以和 count 一起使用，此时复制的全部字节数将是 sizefunc×count。
 
 ```c++
